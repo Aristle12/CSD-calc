@@ -1,3 +1,4 @@
+Scripts developed for Monteiro et al. (). Please refer to the paper while using for publishing purposes.
 This set of Python scripts calculates CSDs for any mineral. 
 Note that the methode for volumetric/ stereological corrections used in this script are crude (after Zieg and Marsh 2012).
 This program is only suitable for analysis of CSDs from within the same igneous body and not for comparison between two or more bodies because of this.
