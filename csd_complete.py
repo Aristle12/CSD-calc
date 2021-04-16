@@ -40,7 +40,7 @@ def line(m, b, ecks):
         gee.append(m*element + b)
     return gee
 ##Getting names file
-names = pd.read_csv("E:/Project/Hardik_CSD/csd_results/name_sec.csv") ####
+names = pd.read_csv("name_sec.csv") ####
 name = names['Sample']#Check this#
 depth = names['Depth']#And this#
 f_depth = names['Depth In Flow']#And this#
