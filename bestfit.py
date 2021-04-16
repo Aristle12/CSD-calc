@@ -1,8 +1,10 @@
+###Program to calculate the best-fit lines (up to 2) through the calculated CSDs and plot them
 import numpy as np 
 import pandas as pd 
 import matplotlib.pyplot as plt
 import math
 
+###Regression functions
 def squared_error (y_orig, y_line):
     return sum((y_orig - y_line)**2)
 def r_squared(y_orig, y_line):
@@ -13,6 +15,7 @@ def r_squared(y_orig, y_line):
         return 1
     else:
         return 1-(se_reg/se_mean)
+###Line functions
 def fun(x, m, b):
     line=[]
     for ele in x:

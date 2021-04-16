@@ -1,4 +1,4 @@
-##Program to calculate, bin and plot CSDs, determine the best fit lines through them and plot the best fit lines
+##Program to calculate, bin and plot CSDs
 ##Output folders required 
 ###1 binned data
 ###2 regressed data
@@ -49,7 +49,7 @@ plot_color = plt.get_cmap('RdBu')
 
 #Binning data
 for i in range(0, names.shape[0]):
-    plot_data = pd.read_csv("input_data/"+name[i]+'.csv') ####
+    plot_data = pd.read_csv("input_data/"+name[i]+'.csv')
     reg_data = pd.DataFrame(columns=('size', 'num_vol', 'pop_density', '2sigma', 'total_area', 'number_per_unit_area', 'max_l', 'avg_l'))
     length = plot_data['Length']
     total_area = plot_data['total_area'][0]
