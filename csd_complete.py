@@ -40,7 +40,7 @@ def line(m, b, ecks):
         gee.append(m*element + b)
     return gee
 ##Getting names file
-names = pd.read_csv("E:/Project/Hardik_CSD/csd_results/name_sec.csv") ####
+names = pd.read_csv("name_sec.csv") ####
 name = names['Sample']#Check this#
 depth = names['Depth']#And this#
 f_depth = names['Depth In Flow']#And this#
@@ -52,7 +52,7 @@ for i in range(0, names.shape[0]):
     plot_data = pd.read_csv("input_data/"+name[i]+'.csv')
     reg_data = pd.DataFrame(columns=('size', 'num_vol', 'pop_density', '2sigma', 'total_area', 'number_per_unit_area', 'max_l', 'avg_l'))
     length = plot_data['Length']
-    total_area = plot_data['total_area'][0]
+    total_area = plot_data['Area_total'][0]
     min_val = max(length.min(), 3)
     max_val = length.max()
     bins = np.geomspace(min_val, max_val, 16)
